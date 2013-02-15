@@ -1,0 +1,20 @@
+name: "Madisonium"
+description: "Tech Raised to the Power of M"
+
+url: "http://madisonium.github.com"
+
+paginate: 10
+
+markdown: rdiscount
+permalink: pretty
+
+navigation:
+- text: Home
+  url: /
+- text: Projects
+  url: /projects/
+- text: Get Involved
+  url: /get-involved/
+- text: About Us
+  url: /about/
+
