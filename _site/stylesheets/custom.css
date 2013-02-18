@@ -1,0 +1,50 @@
+@media screen and (max-width: 760px) {
+  #sidebar {
+    display: none;
+  }
+  #footer-area {
+    display: none;
+  }
+}
+
+#site-title, #site-description {
+  font-weight:bold;
+}
+
+.entry-title, .page .entry-title {
+  font-size: 0px;
+}
+
+.alignleft {
+  margin: 0px 20px 0px 0px;
+}
+
+h4 {
+  padding-top: 22px;
+  margin-bottom: 18px;
+  font-family: "DIN", "Oswald", sans-serif;
+  font-weight: 300;
+  line-height: 1.62em;
+  letter-spacing: 1px;
+
+}
+
+#site-title a, #site-description {
+  color:#00b6bd;
+}
+
+body {
+  background-color: #716558;
+  background-image: url('/images/bg.jpg');
+  background-repeat: repeat;
+  background-position: top left;
+  background-attachment: scroll;
+}
+
+body #wrapper {
+  max-width: 760px;
+}
+
+#social-media-icons {
+  margin-right: 3.4%;
+}

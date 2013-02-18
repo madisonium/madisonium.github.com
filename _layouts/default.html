@@ -1,3 +1,30 @@
-{% include header.html %}
-{{ content }}
-{% include footer.html %}
+{% capture root_url %}{{ site.root | strip_slash }}{% endcapture %}
+{% include head.html %}
+<body {% if page.body_id %} id="{{ page.body_id }}" {% endif %}>
+  <div id="wrapper">
+    {% include upgrade_browser.html %}
+
+    <header id="header" role="banner">
+      {% include header.html %}
+      <nav id="access" role="navigation">{% include navigation.html %}</nav>
+    </header>
+
+    <div id="container">
+      <section id="content" class="column onecol">
+        <article class="page type-page status-publish column onecol">
+        <div class="entry">
+          <header class="entry-header">
+            <h1 class="entry-title">{{ page.title }}</h1>
+          </header>
+          <div class="entry-content">
+            {{ content }}
+            <div class="clear"></div>
+          </div>
+        </article>
+      </section>
+    </div>
+    <div id="footer">{% include footer.html %}</div>
+    {% include after_footer.html %}
+  </div>
+</body>
+</html>

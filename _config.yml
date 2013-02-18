@@ -1,7 +1,7 @@
 name: "Madisonium"
 description: "Tech Raised to the Power of M"
 
-url: "http://madisonium.github.com"
+url: "http://www.madisonium.org"
 
 paginate: 10
 
@@ -17,4 +17,3 @@ navigation:
   url: /get-involved/
 - text: About Us
   url: /about/
-
