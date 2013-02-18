@@ -5,14 +5,110 @@
   #footer-area {
     display: none;
   }
+
+  #site-title {
+    float: left;
+    margin-left: 6.6%;
+    padding-left: 20px;
+  }
+
+  body #social-media-icons {
+    float: right;
+    margin-right: 6.6%;
+  }
+
+  .clear.desktop-only {
+    display: none;
+  }
+
+
+  body #access .nav-show, body #access a.nav-show:hover {
+    top: 0;
+    margin-top: 70px;
+    right: 0;
+    padding-right: 6.6%;
+  }
+
+  body #access #menu-navigation {
+    padding-top: 128px;
+  }
+
+  body #access .menu {
+    width: 160px;
+    float: right;
+    padding-top: 0px;
+    margin-right: -160px;
+  }
+
+  body #access:target .menu {
+    margin-right: 0;
+  }
+
+  body #access:target .menu {
+    -moz-transition: margin-right .25s;
+    -webkit-transition: margin-right .25s;
+    -o-transition: margin-right .25s;
+    -ms-transition: margin-right .25s;
+    transition: margin-right .25s;
+  }
+
+}
+
+@media screen and (max-width: 440px) {
+
+  body #site-title {
+    float: none;
+    display: block;
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  body #site-title a {
+    font-size: 140%;
+  }
+
+  body #site-title img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  body #header {
+    position: relative;
+  }
+
+  body #access, body #social-media-icons {
+    position: absolute;
+    top: 0;
+  }
+
+  body #social-media-icons {
+    left: 0;
+    padding-left: 6.6%;
+    float: none;
+    display: inline;
+  }
+
+  body #access .nav-show, body #access a.nav-show:hover {
+    margin-top: 18px;
+  }
+
+  body #access #menu-navigation {
+    padding-top: 70px;
+  }
+
 }
 
 #site-title, #site-description {
   font-weight:bold;
 }
 
-.entry-title, .page .entry-title {
-  font-size: 0px;
+.entry-header {
+  text-align: center;
+}
+
+.entry-title {
+  text-transform: uppercase;
 }
 
 .alignleft {
@@ -47,4 +143,18 @@ body #wrapper {
 
 #social-media-icons {
   margin-right: 3.4%;
+}
+
+#section-icons {
+  text-align: center;
+}
+
+#section-icons img {
+  border: 0;
+  height: 109px;
+  width: 109px;
+}
+
+#section-icons a {
+  padding: 0 5px;
 }

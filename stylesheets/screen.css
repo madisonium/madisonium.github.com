@@ -2815,11 +2815,13 @@ a.ajax-load:hover {
     height: 40px !important;
     border-top: 1px solid #444;
     line-height: 40px;
-    -moz-transition: height .25s, line-height .25s;
-    -webkit-transition: height .25s, line-height .25s;
-    -o-transition: height .25s, line-height .25s;
-    -ms-transition: height .25s, line-height .25s;
-    transition: height .25s, line-height .25s;
+    /*
+     * -moz-transition: height .25s, line-height .25s;
+     * -webkit-transition: height .25s, line-height .25s;
+     * -o-transition: height .25s, line-height .25s;
+     * -ms-transition: height .25s, line-height .25s;
+     * transition: height .25s, line-height .25s;
+     */
   }
 
   #access .menu a:hover {

@@ -9,9 +9,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Madisonium</title>
     
-    <meta name="description" content=" Madisonium is devoted to improving the overall Madison tech ecosystem with an emphasis on the local web industry.
+    <meta name="description" content="Madisonium is devoted to improving the overall Madison tech ecosystem with an emphasis on the local web industry.
 
-Everyone is welcome to join! To...">
+Everyone is welcome to join! To ...">
     
 
     <!-- http://t.co/dKP3o1e -->
@@ -37,23 +37,23 @@ Everyone is welcome to join! To...">
  <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
  <![endif]-->
 
-
     <header id="header" role="banner">
-      <div id="site-title">
-  <a href="/" rel="home">
-    <img src="/images/MadisoniumColorLogoMedShifted.png" alt="MADISONIUM" width="91" height="110" />
-  </a>
-  <a class="home" href="/" rel="home">MADISONIUM</a>
-</div>
+  <div id="site-title">
+    <a href="/" rel="home">
+      <img src="/images/MadisoniumColorLogoMedShifted.png" alt="MADISONIUM" width="91" height="110" />
+      MADISONIUM
+    </a>
+  </div>
 
-<div id="site-description">Tech Raised to the Power of M</div>
-<div id="social-media-icons">
-  <a class="social-media-icon twitter" href="https://twitter.com/madisonium">Twitter</a>
-</div>
+  <div id="site-description">Tech Raised to the Power of M</div>
+  <div id="social-media-icons">
+    <a class="social-media-icon twitter" href="https://twitter.com/madisonium">Twitter</a>
+  </div>
 
-<div class="clear"></div>
+  <div class="clear desktop-only"></div>
 
-      <nav id="access" role="navigation"><a class="nav-show" href="#access">Show Navigation</a>
+  <nav id="access" roles="navigation">
+    <a class="nav-show" href="#access">Show Navigation</a>
 <a class="nav-hide" href="#nogo">Hide Navigation</a>
 <div class="menu-navigation-container">
   <ul id="menu-navigation" class="menu">
@@ -72,31 +72,34 @@ Everyone is welcome to join! To...">
   </ul>
 </div>
 <div class="clear"></div>
-</nav>
-    </header>
+
+  </nav>
+</header>
+
 
     <div id="container">
       <section id="content" class="column onecol">
-        <article class="page type-page status-publish column onecol">
+        <article class="page column onecol">
         <div class="entry">
           <header class="entry-header">
+            
             <h1 class="entry-title"></h1>
           </header>
           <div class="entry-content">
-            <p><strong> Madisonium is devoted to improving the overall Madison tech ecosystem with an emphasis on the local web industry.</strong></p>
+            <p><strong>Madisonium is devoted to improving the overall Madison tech ecosystem with an emphasis on the local web industry.</strong></p>
 
 <p>Everyone is welcome to join! To get involved either help out on one of our <a title="Madisonium Projects" href="/projects/">current projects</a> or start a new initiative that we can support. You can also join our <a title="Madisonium Google Group" href="https://groups.google.com/forum/?fromgroups#!forum/madisonium" target="_blank">discussion group</a>, and <a href="http://eepurl.com/gYAl5" target="_blank">subscribe to our mailing list</a>.</p>
 
-<div style="margin-left: 20%;">
-  <div style="float: left;"><a href="/projects/"><br />
-    <img class="aligncenter size-full" style="border: 0px; margin-top: -20px;" title="Projects" src="/images/LabIcon.png" alt="" width="109" height="109" /><br />
-  </a></div>
-  <div style="float: left; padding-left: 10px;"><a href="/get-involved/"><br />
-    <img class="aligncenter size-full" style="border: 0px; margin-top: -20px;" title="Get Involved" src="/images/CompIcon.png" alt="" width="109" height="109" /><br />
-  </a></div>
-  <div style="float: left; padding-left: 10px;"><a href="/about/"><br />
-    <img class="aligncenter size-full" style="border: 0px; margin-top: -20px;" title="About Us" src="/images/CoffeeIcon.png" alt="" width="109" height="109" /><br />
-  </a></div>
+<div id="section-icons">
+  <a href="/projects/">
+    <img title="Projects" src="/images/LabIcon.png" alt="Projects" />
+  </a>
+  <a href="/get-involved/">
+    <img title="Get Involved" src="/images/CompIcon.png" alt="Get Involved" />
+  </a>
+  <a href="/about/">
+    <img title="About Us" src="/images/CoffeeIcon.png" alt="About Us" />
+  </a>
 </div>
 
             <div class="clear"></div>
@@ -104,12 +107,14 @@ Everyone is welcome to join! To...">
         </article>
       </section>
     </div>
-    <div id="footer"><div id="copyright">
-  <p class="copyright twocol">© 2013 MADISONIUM</p>
-  <div class="clear"></div>
+
+    <div id="footer">
+  <div id="copyright">
+    <p class="copyright twocol">© 2013 MADISONIUM</p>
+    <div class="clear"></div>
+  </div>
 </div>
-</div>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.0.min.js"><\/script>')</script>
 <!--
 <script src="js/plugins.js"></script>
@@ -117,11 +122,14 @@ Everyone is welcome to join! To...">
 -->
 
 <script>
-  var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-  s.parentNode.insertBefore(g,s)}(document,'script'));
+  if (window.location.host.indexOf('localhost') === -1) {
+    var _gaq=[['_setAccount','UA-15156904-2'],['_trackPageview']];
+    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g,s)}(document,'script'));
+  }
 </script>
+
 
   </div>
 </body>

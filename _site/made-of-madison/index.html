@@ -39,23 +39,23 @@ Teammates: Lucas Dailey, Kelly Rauwerdink, contact...">
  <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
  <![endif]-->
 
-
     <header id="header" role="banner">
-      <div id="site-title">
-  <a href="/" rel="home">
-    <img src="/images/MadisoniumColorLogoMedShifted.png" alt="MADISONIUM" width="91" height="110" />
-  </a>
-  <a class="home" href="/" rel="home">MADISONIUM</a>
-</div>
+  <div id="site-title">
+    <a href="/" rel="home">
+      <img src="/images/MadisoniumColorLogoMedShifted.png" alt="MADISONIUM" width="91" height="110" />
+      MADISONIUM
+    </a>
+  </div>
 
-<div id="site-description">Tech Raised to the Power of M</div>
-<div id="social-media-icons">
-  <a class="social-media-icon twitter" href="https://twitter.com/madisonium">Twitter</a>
-</div>
+  <div id="site-description">Tech Raised to the Power of M</div>
+  <div id="social-media-icons">
+    <a class="social-media-icon twitter" href="https://twitter.com/madisonium">Twitter</a>
+  </div>
 
-<div class="clear"></div>
+  <div class="clear desktop-only"></div>
 
-      <nav id="access" role="navigation"><a class="nav-show" href="#access">Show Navigation</a>
+  <nav id="access" roles="navigation">
+    <a class="nav-show" href="#access">Show Navigation</a>
 <a class="nav-hide" href="#nogo">Hide Navigation</a>
 <div class="menu-navigation-container">
   <ul id="menu-navigation" class="menu">
@@ -74,14 +74,17 @@ Teammates: Lucas Dailey, Kelly Rauwerdink, contact...">
   </ul>
 </div>
 <div class="clear"></div>
-</nav>
-    </header>
+
+  </nav>
+</header>
+
 
     <div id="container">
       <section id="content" class="column onecol">
-        <article class="page type-page status-publish column onecol">
+        <article class="page column onecol">
         <div class="entry">
           <header class="entry-header">
+            
             <h1 class="entry-title">Made of Madison</h1>
           </header>
           <div class="entry-content">
@@ -96,12 +99,14 @@ Teammates: Lucas Dailey, Kelly Rauwerdink, <a href="https://groups.google.com/fo
         </article>
       </section>
     </div>
-    <div id="footer"><div id="copyright">
-  <p class="copyright twocol">© 2013 MADISONIUM</p>
-  <div class="clear"></div>
+
+    <div id="footer">
+  <div id="copyright">
+    <p class="copyright twocol">© 2013 MADISONIUM</p>
+    <div class="clear"></div>
+  </div>
 </div>
-</div>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.0.min.js"><\/script>')</script>
 <!--
 <script src="js/plugins.js"></script>
@@ -109,11 +114,14 @@ Teammates: Lucas Dailey, Kelly Rauwerdink, <a href="https://groups.google.com/fo
 -->
 
 <script>
-  var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-  s.parentNode.insertBefore(g,s)}(document,'script'));
+  if (window.location.host.indexOf('localhost') === -1) {
+    var _gaq=[['_setAccount','UA-15156904-2'],['_trackPageview']];
+    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g,s)}(document,'script'));
+  }
 </script>
+
 
   </div>
 </body>

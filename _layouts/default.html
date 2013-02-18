@@ -3,17 +3,16 @@
 <body {% if page.body_id %} id="{{ page.body_id }}" {% endif %}>
   <div id="wrapper">
     {% include upgrade_browser.html %}
-
-    <header id="header" role="banner">
-      {% include header.html %}
-      <nav id="access" role="navigation">{% include navigation.html %}</nav>
-    </header>
+    {% include header.html %}
 
     <div id="container">
       <section id="content" class="column onecol">
-        <article class="page type-page status-publish column onecol">
+        <article class="page column onecol">
         <div class="entry">
           <header class="entry-header">
+            {% if page.icon %}
+              <img title="{{ page.icon }}" src="/images/{{ page.icon }}.png" alt="" />
+            {% endif %}
             <h1 class="entry-title">{{ page.title }}</h1>
           </header>
           <div class="entry-content">
@@ -23,8 +22,8 @@
         </article>
       </section>
     </div>
-    <div id="footer">{% include footer.html %}</div>
-    {% include after_footer.html %}
+
+    {% include footer.html %}
   </div>
 </body>
 </html>
